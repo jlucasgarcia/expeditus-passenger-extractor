@@ -179,7 +179,7 @@
             return;
         }
 
-        const json = JSON.stringify(pasajeros, null, 2);
+        const json = JSON.stringify({ passengers: pasajeros }, null, 2);
         GM_setClipboard(json);
         mostrarToast(`✓ ${pasajeros.length} pasajero(s) copiado(s)`);
         console.log('[Expeditus] JSON copiado al portapapeles:\n', json);
